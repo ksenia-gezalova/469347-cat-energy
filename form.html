@@ -24,63 +24,66 @@
     </nav>
   </header>
 
-  <section class="programm-choice">
-    <h1 class="programm-choice__title">Подбор программы</h1>
-    <p class="programm-choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+  <main class="form-page">
+    <section class="programm-choice">
+      <h1 class="programm-choice__title">Подбор программы</h1>
+      <p class="programm-choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-    <form class="programm=choice__search-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="cat-form">
-        <label for="cat-name">Имя:<sup>*</sup></label>
-        <input type="text" id="cat-name" value="Барсик" required>
-        <label for="cat-weight">вес(кг):<sup>*</sup></label>
-        <input type="text" id="cat-weight" value="7" required>
-        <label for="cat-age">возраст (лет):</label>
-        <input type="text" id="cat-age" value="7">
+      <form class="programm=choice__search-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="cat-form">
+          <label for="cat-name">Имя:<sup>*</sup></label>
+          <input type="text" id="cat-name" value="Барсик" required>
+          <label for="cat-weight">вес(кг):<sup>*</sup></label>
+          <input type="text" id="cat-weight" value="7" required>
+          <label for="cat-age">возраст (лет):</label>
+          <input type="text" id="cat-age" value="7">
+        </fieldset>
 
-        <label for="slim">Похудение</label>
-        <input type="radio" id="slim" name="choice" checked>
-        <label for="pro">Набор массы</label>
-        <input type="radio" id="pro" name="choice">
-        <label for="help">Не знаю (нужен ваш совет)</label>
-        <input type="radio" id="help" name="choice">
-      </div>
+        <fieldset class="cat-programm-choice">
+          <label for="slim">Похудение</label>
+          <input type="radio" id="slim" name="choice" checked>
+          <label for="pro">Набор массы</label>
+          <input type="radio" id="pro" name="choice">
+          <label for="help">Не знаю (нужен ваш совет)</label>
+          <input type="radio" id="help" name="choice">
+        </fieldset>
 
-      <div class="owner-form">
-        <p class="owner-form__title">
-          Контактные данные (владельца кота)
-        </p>
-        <label for="e-mail">E-mail:<sup>*</sup></label>
-        <input type="email" id="e-mail" value="kuklachev@gmail.com" required>
-        <label for="phone">Телефон:<sup>*</sup></label>
-        <input type="number" id="phone" value="8(960)900-60-90" required>
-      </div>
-      <p>
-        Комментарий
-      </p>
+        <fieldset class="owner-form">
+          <legend class="owner-form__title">
+            Контактные данные (владельца кота)
+          </legend>
+          <label for="e-mail">E-mail:<sup>*</sup></label>
+          <input type="email" id="e-mail" value="kuklachev@gmail.com" required>
+          <label for="phone">Телефон:<sup>*</sup></label>
+          <input type="number" id="phone" value="8(960)900-60-90" required>
+        </fieldset>
 
-      <p><textarea rows="10" cols="45" name="text">Расскажите обо всех повадках кота</textarea></p>
+        <fieldset>
+          <legend>Комментарий</legend>
 
-      <p>
-        Дополнительно
-      </p>
+          <textarea rows="10" cols="45" name="text">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
 
-      <input type="checkbox" id="sweetener" checked>
-      <label for="sweetener">Сахарозаменитель</label>
-      <input type="checkbox" id="water">
-      <label for="water">Питьевая вода</label>
-      <input type="checkbox" id="milk">
-      <label for="milk">Молоко</label>
-      <input type="checkbox" id="vitamins">
-      <label for="vitamins">Витамины</label>
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <input type="checkbox" id="sweetener" checked>
+          <label for="sweetener">Сахарозаменитель</label>
+          <input type="checkbox" id="water">
+          <label for="water">Питьевая вода</label>
+          <input type="checkbox" id="milk">
+          <label for="milk">Молоко</label>
+          <input type="checkbox" id="vitamins">
+          <label for="vitamins">Витамины</label>
+        </fieldset>
 
-      <p><input type="submit" value="Отправить заявку"></p>
+        <input type="submit" value="Отправить заявку">
 
-    </form>
+      </form>
 
-    <p><sup>*</sup>- Обязательные поля</p>
-  </section>
+      <p><sup>*</sup>- Обязательные поля</p>
+    </section>
 
-  <article class="cooperation">
+    <article class="cooperation">
       <h4 class="cooperation__title">Приглашаем к сотрудничеству </h4>
       <p class="cooperation__address">
         ул.Большая Конюшенная, д.19/8 Санкт-Петербург
@@ -101,6 +104,8 @@
 
       <p class="main-footer_copyright"><a href="#">HTML Academy</a></p>
     </footer>
+
+  </main>
 
 </body>
 </html>
