@@ -23,15 +23,17 @@
     </nav>
   </header>
 
-  <main class="form-page">
+  <main>
     <section class="programm-choice">
-      <h2 class="h2-title">Подбор программы</h2>
+      <h2 class="page-title">Подбор программы</h2>
       <p class="programm-choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-      <form class="programm=choice__search-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="cat-form">
-          <label for="cat-name" class="cat-form__name">Имя:<sup>*</sup></label>
-          <input type="text" id="cat-name" value="Барсик" required class="cat-form__name-input">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form"__fieldset>
+         <div class="form-field">
+            <label for="cat-name" class="cat-form__name">Имя:<sup>*</sup></label>
+            <input type="text" id="cat-name" value="Барсик" required class="cat-form__name-input">
+          </div>
           <label for="cat-weight" class="cat-form__weight">вес(кг):<sup>*</sup></label>
           <input type="text" id="cat-weight" value="7" required class="cat-form__weight-input">
           <label for="cat-age" class="cat-form__age">возраст (лет):</label>
@@ -48,7 +50,7 @@
         </fieldset>
 
         <fieldset class="owner-form">
-          <legend class="owner-form__title">
+          <legend class="page-subtitle">
             Контактные данные (владельца кота)
           </legend>
           <label for="e-mail" class="owner-form__email">E-mail:<sup>*</sup></label>
@@ -58,13 +60,13 @@
         </fieldset>
 
         <fieldset class="owner-comments">
-          <legend class="owner-comments__title">Комментарий</legend>
+          <legend class="page-subtitle">Комментарий</legend>
 
           <textarea rows="10" cols="45" name="text" class="owner-comments__text">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
         <fieldset class="extra-form">
-          <legend class="extra-form__title">Дополнительно</legend>
+          <legend class="page-subtitle">Дополнительно</legend>
           <input type="checkbox" id="sweetener" checked class="extra-form__sweetener-input">
           <label for="sweetener" class="extra-form__sweetener">Сахарозаменитель</label>
           <input type="checkbox" id="water" class="extra-form__water-input">
