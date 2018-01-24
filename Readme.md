@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ksenia Gezalova](https://up.htmlacademy.ru/adaptive/13/user/469347).
-* Наставник: `Евгений Алипкин`.
+* Наставник: `Евгений  Алипкин`.
 
 ---
 
