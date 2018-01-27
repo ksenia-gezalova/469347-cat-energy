@@ -1,0 +1,10 @@
+.extra-products__name {
+    color: rgba(34, 34, 34, 255);
+    text-align: left;
+    @include font(16px, 16px, 400);
+}
+
+.extra-products__button {
+    background-color: $color_green;
+    color: $color_light;
+}

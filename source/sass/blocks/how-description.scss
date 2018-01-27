@@ -1,0 +1,31 @@
+.how-description__list {
+    @include list-reset;
+}
+
+.how-description__item {
+    @include font(14px, 18px, 400);
+    color: $color_dark-gray;
+}
+
+.how-description__item::before {
+    content: "";
+    width: 60px;
+	height: 600px;
+	background-color: $color_green;
+}
+
+.how-description__item--1::before {
+    content: ""'
+}
+
+.how-description__item--2::before {
+    content: ""'
+}
+
+.how-description__item--3::before {
+    content: ""'
+}
+
+.how-description__item--4::before {
+    content: ""'
+}

@@ -1,0 +1,18 @@
+.show-all {
+    background-color: $color_light;
+    text-align: center;
+}
+
+.show-all__title {
+    color: $color_dark;
+    @include font(16px, 20px, 400);
+}
+
+.show-all__text {
+    color: $color_light-gray-text;
+}
+
+.show-all__button {
+    color: #222222;
+    background-color: $color_light-gray;
+}

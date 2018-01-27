@@ -1,0 +1,25 @@
+.promo {
+    background-image: url();
+    text-align: center;
+    color: $color_light;
+}
+
+.promo__title {
+    @include font(36px, 36px, 500);
+}
+
+.promo__text {
+    @include font(14px, 14px, 400);
+}
+
+.promo__button {
+    @include font(14px, 18px, 400);
+    background-color: $color_green;
+    color: $color_light;
+    padding: 12px 71px;
+}
+
+.promo__button:hover {
+    background-color: $color_dark-green;
+    color: $color_dark-green-text;
+}

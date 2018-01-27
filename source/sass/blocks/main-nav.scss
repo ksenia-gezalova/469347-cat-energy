@@ -1,0 +1,21 @@
+.main-nav__toggle {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    
+    position: absolute;
+}
+
+.main-nav__list {
+    @include list-reset;
+}
+
+.main-nav__item {
+    @include font(20px, 20px, bold);
+    color: $color_dark;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: $color_light-gray-border;
+}
