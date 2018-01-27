@@ -1,12 +1,12 @@
 .cooperation {
-    background-color: $color_light;
-    display: flex;
+  background-color: $color_light;
+  display: flex;
 }
 
 .cooperation__title {
-    @include font(16px, 20px, 600);
+  @include font(16px, 20px, 600);
 }
 
 .cooperation__address {
-    color: $color_dark-gray;
+  color: $color_dark-gray;
 }
