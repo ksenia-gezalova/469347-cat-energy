@@ -3,15 +3,14 @@
   text-align: center;
   border-top: 1px solid $color_light-gray-border;
   border-bottom: 1px solid $color_light-gray-border;
-  background-color: $color_light;
   margin-top: 24px;
   padding-bottom: 24px;
   padding-top: 92px;
 }
 
 .show-all__title {
-  color: $color_dark;
   @include font(16px, 20px, 400);
+  color: $color_dark;
 }
 
 .show-all__text {

@@ -5,8 +5,8 @@
 }
 
 .option__title {
-  color: $color_dark;
   @include font(24px, 37px, 600);
+  color: $color_dark;
 }
 
 .option__title::before {
