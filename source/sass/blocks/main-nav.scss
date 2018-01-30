@@ -12,10 +12,31 @@
   @include list-reset;
 }
 
+.main-nav__item:first-child {
+  border-top: 1px solid $color_light-gray-border;
+}
+
 .main-nav__item {
+  padding: 23px 0px;
+  border-bottom: 1px solid $color_light-gray-border;
+}
+
+.main-nav__item--active a {
+  border-bottom: 4px solid $color_green;
+}
+
+.main-nav__item a {
   @include font(20px, 20px, bold);
+  display: block;
   color: $color_dark;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: $color_light-gray-border;
+}
+
+.main-nav__item a:hover {
+  color: #707070;
+}
+
+.main-nav__item a:active {
+  color: #b7b7b7;
 }

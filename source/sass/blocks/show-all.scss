@@ -1,6 +1,12 @@
 .show-all {
   background-color: $color_light;
   text-align: center;
+  border-top: 1px solid $color_light-gray-border;
+  border-bottom: 1px solid $color_light-gray-border;
+  background-color: $color_light;
+  margin-top: 24px;
+  padding-bottom: 24px;
+  padding-top: 92px;
 }
 
 .show-all__title {
@@ -15,4 +21,5 @@
 .show-all__button {
   color: #222222;
   background-color: $color_light-gray;
+  padding: 11px 92px;
 }
