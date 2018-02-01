@@ -9,7 +9,7 @@
   padding-top: 3px;
 }
 
-.checkbox__text input[type="checkbox"]+.checkbox__indicator {
+.checkbox__text input[type="checkbox"] + .checkbox__indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,25 +18,25 @@
   border: 1px solid #cfcfcf;
 }
 
-.checkbox__text input[type="checkbox"]:checked+.checkbox__indicator::before,
-.checkbox__text input[type="checkbox"]:checked+.checkbox__indicator::after {
-    content: "";
-    position: absolute;
-    background-color: $color_dark-green;
+.checkbox__text input[type="checkbox"]:checked + .checkbox__indicator::before,
+.checkbox__text input[type="checkbox"]:checked + .checkbox__indicator::after {
+  content: "";
+  position: absolute;
+  background-color: $color_dark-green;
 }
 
-.checkbox__text input[type="checkbox"]+.checkbox__indicator::before {
-    transform: rotate(45deg);
-    width: 12px;
-    height: 2px;
-    top: 15px;
-    left: 2px;
+.checkbox__text input[type="checkbox"] + .checkbox__indicator::before {
+  transform: rotate(45deg);
+  width: 12px;
+  height: 2px;
+  top: 15px;
+  left: 2px;
 }
 
-.checkbox__text input[type="checkbox"]+.checkbox__indicator::after {
-    transform: rotate(-45deg);
-    width: 19px;
-    height: 2px;
-    top: 12px;
-    left: 8px;
+.checkbox__text input[type="checkbox"] + .checkbox__indicator::after {
+  transform: rotate(-45deg);
+  width: 19px;
+  height: 2px;
+  top: 12px;
+  left: 8px;
 }
