@@ -1,9 +1,45 @@
-.form__fieldset {
-  text-transform: uppercase;
-}
-
 .form__button {
   padding: 12px 75px;
-  color: $color_light;
-  background-color: $color_green;
+}
+
+.form__fieldset {
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.form__field {
+  display: flex;
+  align-items: baseline;
+}
+
+.form__input {
+  font: inherit;
+  text-transform: uppercase;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  margin-left: auto;
+  margin-top: 15px;
+  flex-grow: 2;
+}
+
+.form__input:hover {
+  border: 1px solid #cfcfcf;
+}
+
+.form__input:focus {
+  border: 1px solid $color_dark-gray;
+}
+
+form__input:invalid {
+  border: 1px solid #ff8888;
+}
+
+.form__label {
+  margin-right: 15px;
+}
+
+.form__textarea {
+  font: inherit;
+  text-transform: uppercase;
 }

@@ -3,15 +3,8 @@
   font-family: "Oswald";
   font-style: normal;
   src:
-    url("../fonts/oswaldregular.woff"),
-    url("../fonts/oswaldregular.woff2");
-}
-
-@font-face {
-  font-weight: bold;
-  font-family: "Oswald";
-  font-style: normal;
-  src:
+    local("Oswald"),
+    local("Oswald-Regular"),
     url("../fonts/oswaldregular.woff"),
     url("../fonts/oswaldregular.woff2");
 }

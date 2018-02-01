@@ -6,3 +6,33 @@
   border: none;
   cursor: pointer;
 }
+
+.button--gray {
+  background-color: $color_light-gray;
+  color: $color_dark-gray;
+}
+
+.button--gray:hover {
+  background-color: #ebebeb;
+  color: #717171;
+}
+
+.button--gray:active {
+  background-color: #ebebeb;
+  color: #b9b9b9;
+}
+
+.button--green {
+  background-color: $color_green;
+  color: $color_light;
+}
+
+.button--green:hover {
+  background-color: $color_dark-green;
+  color: $color_light;
+}
+
+.button--green:active {
+  background-color: $color_dark-green;
+  color: $color_dark-green-text;
+}
