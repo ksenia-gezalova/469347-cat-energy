@@ -1,0 +1,22 @@
+.show-all {
+  background-color: $color_light;
+  text-align: center;
+  border-top: 1px solid $color_light-gray-border;
+  border-bottom: 1px solid $color_light-gray-border;
+  margin-top: 24px;
+  padding-bottom: 24px;
+  padding-top: 92px;
+}
+
+.show-all__title {
+  @include font(16px, 20px, 400);
+  color: $color_dark;
+}
+
+.show-all__text {
+  color: $color_light-gray-text;
+}
+
+.show-all__button {
+  padding: 11px 92px;
+}

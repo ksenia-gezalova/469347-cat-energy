@@ -4,27 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header page-layout">
     <a href="#" class="header">
-        <img src="#" alt="Logo" class="page-header__logo" width="33" height="38">
-    </a>
-    <img src="#" alt="Cat Energy" class="main-header__icon" width="101" height="18">
+            <img src="#" alt="Logo" class="header__logo" width="33" height="38">
+            <img src="#" alt="Cat Energy" class="header__icon" width="101" height="18">
+        </a>
 
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-        <li class="site-list__item"><a href="#">Каталог продукции</a></li>
-        <li class="site-list__item"><a href="#">Подбор программы</a></li>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
+        <li class="main-nav__item main-nav__item--active"><a href="form.html">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="programm-choice">
+    <section class="programm-choice page-layout">
       <h2 class="page-title">Подбор программы</h2>
       <p class="programm-choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
@@ -44,16 +45,16 @@
           </div>
         </fieldset>
 
-        <fieldset class="radio">
-          <div class="radio__field">
+        <fieldset class="form__fieldset">
+          <div class="radio">
             <label for="slim" class="radio__text">Похудение</label>
             <input type="radio" id="slim" name="choice" checked class="radio__input">
           </div>
-          <div class="radio__field">
+          <div class="radio">
             <label for="pro" class="radio__text">Набор массы</label>
             <input type="radio" id="pro" name="choice" class="radio__input">
           </div>
-          <div class="radio__field">
+          <div class="radio">
             <label for="help" class="radio__text">Не знаю (нужен ваш совет)</label>
             <input type="radio" id="help" name="choice" class="radio__input">
           </div>
@@ -76,59 +77,65 @@
         <fieldset class="form__fieldset">
           <legend class="page-subtitle">Комментарий</legend>
 
-          <textarea rows="10" cols="45" name="text" class="textarea">Расскажите обо всех повадках кота</textarea>
+          <textarea rows="10" cols="30" name="text" class="form__textarea">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
-        <fieldset class="checkbox">
+        <fieldset class="form__fieldset">
           <legend class="page-subtitle">Дополнительно</legend>
-          <div class="checkbox__field">
-            <input type="checkbox" id="sweetener" checked class="checkbox__input">
-            <label for="sweetener" class="checkbox__text">Сахарозаменитель</label>
+          <div class="checkbox">
+            <label for="sweetener" class="checkbox__text"><input type="checkbox" id="sweetener" checked class="checkbox__input visually-hidden">
+            <span class="checkbox__indicator"></span>Сахарозаменитель</label>
           </div>
-          <div class="radio__field">
-            <input type="checkbox" id="water" class="checkbox__input">
-            <label for="water" class="checkbox__text">Питьевая вода</label>
+          <div class="checkbox">
+            <label for="water" class="checkbox__text"><input type="checkbox" id="water" class="checkbox__input visually-hidden">
+            <span class="checkbox__indicator"></span>Питьевая вода</label>
           </div>
-          <div class="radio__field">
-            <input type="checkbox" id="milk" class="checkbox__input">
-            <label for="milk" class="checkbox__text">Молоко</label>
+          <div class="checkbox">
+            <label for="milk" class="checkbox__text">
+            <input type="checkbox" id="milk" class="checkbox__input visually-hidden">
+            <span class="checkbox__indicator"></span>Молоко</label>
           </div>
-          <div class="radio__field">
-            <input type="checkbox" id="vitamins" class="checkbox__input">
-            <label for="vitamins" class="checkbox__text">Витамины</label>
+          <div class="checkbox">
+            <label for="vitamins" class="checkbox__text">
+            <input type="checkbox" id="vitamins" class="checkbox__input visually-hidden">
+            <span class="checkbox__indicator"></span>
+            Витамины
+            </label>
           </div>
         </fieldset>
 
-        <input type="submit" value="Отправить заявку" class="button">
+        <input type="submit" value="Отправить заявку" class="button form__button button--green">
 
       </form>
 
       <p class="required"><sup>*</sup>- Обязательные поля</p>
     </section>
 
-    <article class="cooperation">
-      <h4 class="cooperation__title">Приглашаем к сотрудничеству </h4>
-      <p class="cooperation__address">
-        ул.Большая Конюшенная, д.19/8 Санкт-Петербург
-      </p>
-    </article>
+    <div class="page-layout">
+      <article class="cooperation">
+        <h4 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h4>
+        <p class="cooperation__address">
+          ул.Большая Конюшенная, д.19/8 Санкт-Петербург
+        </p>
+      </article>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124045!2d30.320894616185566!3d59.93879686904781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516710163654" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="cooperation__map"></iframe>
-
-    <footer class="main-footer">
-      <img src="#" class="main-footer__icon" width="101" height="18" alt="Cat Energy">
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">VKontakte</li>
-          <li class="social__item">Instagram</li>
-          <li class="social__item">Facebook</li>
-        </ul>
-      </div>
-
-      <p class="main-footer__copyright"><a href="#">HTML Academy</a></p>
-    </footer>
-
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124045!2d30.320894616185566!3d59.93879686904781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516710163654" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="map page-layout"></iframe>
+    </div>
   </main>
 
+  <footer class="main-footer page-layout">
+    <img src="#" class="main-footer__icon" width="101" height="18" alt="Cat Energy">
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">VKontakte</li>
+        <li class="social__item">Instagram</li>
+        <li class="social__item">Facebook</li>
+      </ul>
+    </div>
+
+    <p class="main-footer__copyright"><a href="#">HTML Academy</a></p>
+  </footer>
+
 </body>
+
 </html>

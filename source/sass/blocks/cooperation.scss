@@ -1,0 +1,16 @@
+.cooperation {
+  background-color: $color_light;
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.cooperation__title {
+  @include font(16px, 20px, 500);
+  text-transform: uppercase;
+}
+
+.cooperation__address {
+  @include font(14px, 20px, 400);
+  color: $color_dark-gray;
+}
