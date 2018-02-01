@@ -1,10 +1,13 @@
 .promo {
+  min-height: 480px;
   background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-color: linear-gradient(to right, $color_light $color_green);
   background-position: center top;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
   color: $color_light;
+  margin-bottom: 30px;
 }
 
 .promo__title {
@@ -25,15 +28,13 @@
   @include font(14px,
   18px,
   900);
-  background-color: $color_green;
-  color: $color_light;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 71px;
+  padding-right: 71px;
 }
 
-.promo__button:hover {
-  background-color: $color_dark-green;
-  color: $color_dark-green-text;
+.promo__image {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

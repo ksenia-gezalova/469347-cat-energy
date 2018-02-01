@@ -29,7 +29,8 @@
     <article class="promo page-layout">
       <h2 class="promo__title">Функциональное питание для котов</h2>
       <p class="promo__text">Занялся собой? Займись котом!</p>
-      <a href="#" class="button promo__button">Подобрать программу</a>
+      <img src="img/index-can-mobile@1x.png" alt="Cat Energy" class="promo__image" width="280" height="270">
+      <a href="#" class="button promo__button button--green">Подобрать программу</a>
     </article>
 
     <article class="option page-layout">
@@ -82,12 +83,29 @@
         <p class="example__total">
           Затраты на питание: 15 000 руб.
         </p>
-        <img src="#" alt="FatCat" class="example__img">
-        <img src="#" alt="SlimCat" class="example__img">
-        <div class="example__progress progress">
-          <input type="radio" name="progress" value="before" class="progress-input">Было
-          <input type="radio" name="progress" value="after" class="progress-input">Стало
+
+        <div class="slider">
+          <input class="slider__radio visually-hidden" type="radio" value="before" name="slider" id="field-slider-before" checked>
+          <input class="slider__radio visually-hidden" type="radio" value="after" name="slider" id="field-slider-after">
+          <div class="slider__photos">
+            <div class="slider__photobox slider__photobox--before">
+              <img class="slider__photo slider__photo--before" src="img/before-mobile@1x.png" alt="FatCat" width="320" height="240">
+            </div>
+
+            <div class="slider__photobox slider__photobox--after">
+              <img class="slider__photo slider__photo--after" src="img/after-mobile@1x.png" alt="SlimCat" width="320" height="240">
+            </div>
+          </div>
+
+          <div class="slider__controls">
+            <label class="slider__label" for="field-slider-before">Было</label>
+            <div class="slider__scale">
+              <div class="slider__bar"></div>
+            </div>
+            <label class="slider__label" for="slider-after">Стало</label>
+          </div>
         </div>
+
       </section>
     </div>
 
@@ -95,7 +113,7 @@
       <article class="cooperation">
         <h4 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h4>
         <p class="cooperation__address">
-          ул.Большая Конюшенная, д.19/8 Санкт-Петербург
+          ул.Большая Конюшенная, д.19/8<br> Санкт-Петербург
         </p>
       </article>
 
