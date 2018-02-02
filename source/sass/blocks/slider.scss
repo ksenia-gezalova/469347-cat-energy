@@ -1,0 +1,26 @@
+.slider__scale {
+  width: 84px;
+  height: 14px;
+  background: $color_light;
+  margin: 50px auto;
+  border-radius: 34px;
+  position: relative;
+}
+
+.slider__bar {
+  display: inline-block;
+  width: 35px;
+  height: 6px;
+  border-radius: 30px;
+  background-color: $color_green;
+  position: relative;
+  top: -5px;
+  left: 6px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.slider__bar:active {
+  left: 44px;
+  transition: all 0.5s ease-in-out;
+}
