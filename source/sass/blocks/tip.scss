@@ -1,0 +1,29 @@
+.tip__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip__count {
+  position: relative;
+  width: 125px;
+  height: 57px;
+  border: 1px solid $color_light-gray;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tip__text {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  background-color: $color_light-gray;
+  padding: 0 10px;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: lowercase;
+  z-index: 10;
+}

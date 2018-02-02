@@ -42,4 +42,27 @@
 .form__textarea {
   font: inherit;
   text-transform: uppercase;
+  resize: none;
+}
+
+.form__input--decor input[type="text"] {
+  position: relative;
+}
+
+.form__decor {
+  position: absolute;
+  right: 25%;
+  cursor: pointer;
+}
+
+.form__decor svg {
+  display: block;
+}
+
+.form__decor:active {
+  fill: #bddfa8;
+}
+
+.form__decor:invalid {
+  fill: #ff8888;
 }
