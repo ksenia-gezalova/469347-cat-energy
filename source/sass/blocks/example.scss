@@ -1,5 +1,9 @@
 .example {
   background-color: $color_light-gray;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color_light;
+  }
 }
 
 .example__description {
@@ -10,4 +14,10 @@
 .example__total {
   text-align: center;
   color: $color_dark;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    background-color: $color_light;
+  }
 }

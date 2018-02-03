@@ -1,8 +1,15 @@
 .option {
-  width: 280px;
   background-color: $color_light-gray;
   color: $color_gray;
   margin-top: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+  min-height: 370px;
+}
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
 
 .option__title {
@@ -51,4 +58,12 @@
 
 .option__link::after {
   content: "";
+}
+
+@media (min-width: $desktop-width) {
+  .option-list {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color_light;
+  }
 }
