@@ -1,14 +1,9 @@
-@media (min-width: $tablet-width) {
-  .form {
-    padding-left: 44px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .form__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -99,4 +94,10 @@
 
 .form__input--decor:invalid ~ .form__decor svg {
   fill: #ff8888;
+}
+
+.form__row--add {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

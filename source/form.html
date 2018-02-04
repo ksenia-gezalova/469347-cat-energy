@@ -35,7 +35,7 @@
   <main>
     <section class="programm-choice">
       <div class="page-layout">
-        <h2 class="page-title">Подбор программы</h2>
+        <h1 class="page-title">Подбор программы</h1>
         <p class="programm-choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -75,9 +75,7 @@
           </div>
 
           <fieldset class="form__fieldset">
-            <legend class="page-subtitle">
-              Контактные данные (владельца кота)
-            </legend>
+           <div class="page-subtitle"><span>Контактные данные (владельца кота)</span></div>
             <div class="form__field">
               <label for="e-mail" class="form__label">E-mail:<sup>*</sup></label>
 
@@ -102,13 +100,14 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="page-subtitle">Комментарий</legend>
+           <div class="page-subtitle"><span>Комментарий</span></div>
 
             <textarea class="form__textarea" rows="8" cols="20">Расскажите обо всех повадках кота</textarea>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="page-subtitle">Дополнительно</legend>
+            <div class="page-subtitle"><span>Дополнительно</span></div>
+            <div class="form__row form__row--add">
             <div class="checkbox">
               <label for="sweetener" class="checkbox__text"><input type="checkbox" id="sweetener" checked class="checkbox__input visually-hidden">
             <span class="checkbox__indicator"></span>Сахарозаменитель</label>
@@ -128,6 +127,7 @@
             <span class="checkbox__indicator"></span>
             Витамины
             </label>
+            </div>
             </div>
           </fieldset>
 
@@ -212,8 +212,8 @@
       </div>
 
       <p class="main-footer__copyright">
-        <a class="main-footer__copyright-link" href="#">HTML Academy</a>
-        <a href="#"><svg
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive"><svg
   version="1.0"
   id="Layer_1"
   xmlns="http://www.w3.org/2000/svg"
