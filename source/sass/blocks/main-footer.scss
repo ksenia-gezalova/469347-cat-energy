@@ -57,11 +57,11 @@
   height: 34px;
   cursor: pointer;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-left: 25px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 30px;
   }
 }
