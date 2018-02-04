@@ -3,7 +3,7 @@
   position: relative;
   padding: 25px 20px 25px 0;
   color: $color_dark;
-  
+
   span {
     display: inline-block;
     vertical-align: top;
@@ -12,7 +12,7 @@
     z-index: 1;
     background-color: $color_light;
   }
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -31,11 +31,11 @@
   .page-subtitle {
     padding-top: 10px;
     font-size: 36px;
-    
+
     span {
       padding-left: 22px;
     }
-    
+
     &::before {
       margin-left: -50vw;
     }
