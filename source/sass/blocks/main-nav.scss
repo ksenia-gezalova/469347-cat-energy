@@ -16,7 +16,6 @@
   background: none;
   border: none;
   box-shadow: none;
-
   position: absolute;
   top: 8px;
   right: 0px;
@@ -27,14 +26,11 @@
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
   top: 15px;
   left: 0px;
-
   width: 34px;
   height: 2px;
-
   background-color: #000000;
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
