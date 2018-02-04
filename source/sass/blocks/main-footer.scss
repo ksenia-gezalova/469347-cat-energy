@@ -1,83 +1,83 @@
 .main-footer {
-    padding-top: 31px;
-    padding-bottom: 20px;
+  padding-top: 31px;
+  padding-bottom: 20px;
 
-    @media (min-width: $tablet-width) {
-        padding-bottom: 30px;
-    }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .main-footer--gray {
-    background-color: $color_light-gray;
+  background-color: $color_light-gray;
 }
 
 .main-footer__icon {
-    display: block;
-    width: 128px;
-    height: 24px;
-    margin-bottom: 31px;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media (min-width: $tablet-width) {
-        margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__icon:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .main-footer__icon:active {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .main-footer__copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-footer__copyright a {
-    @include font(16px, 16px, 400);
-    color: $color_dark-gray;
+  @include font(16px, 16px, 400);
+  color: $color_dark-gray;
 }
 
 .main-footer__copyright-link:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .main-footer__copyright-link:active {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .main-footer__academy-logo {
-    display: block;
-    width: 27px;
-    height: 34px;
-    cursor: pointer;
+  display: block;
+  width: 27px;
+  height: 34px;
+  cursor: pointer;
 
-    @media(min-width: $tablet-width) {
-        margin-left: 25px;
-    }
+  @media(min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 
-    @media(min-width: $desktop-width) {
-        margin-left: 30px;
-    }
+  @media(min-width: $desktop-width) {
+    margin-left: 30px;
+  }
 }
 
 .main-footer__academy-logo:hover {
-    fill: $color_green;
+  fill: $color_green;
 }
 
 .main-footer__academy-logo:active {
-    fill: #c8e0ba;
+  fill: #c8e0ba;
 }
 
 @media (min-width: $tablet-width) {
-    .main-footer__wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-    }
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
