@@ -24,6 +24,8 @@
   background-repeat: no-repeat;
   position: absolute;
   z-index: -1;
+  width: 100%;
+  left: -20px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -32,8 +34,8 @@
   @media (min-width: $desktop-width) {
     content: url("../img/index-background-desktop.jpg");
     display: block;
-    right: 0;
-    top: -10%;
+    left: 540px;
+    top: -71px;
     z-index: 0;
   }
 }

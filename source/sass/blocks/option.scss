@@ -2,69 +2,173 @@
   background-color: $color_light-gray;
   color: $color_gray;
   margin-top: 20px;
-  width: 100%;
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
-    min-height: 370px;
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 280px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
+    width: 570px;
+    padding-right: 50px;
   }
 }
 
 .option__title {
-  @include font(24px, 37px, 600);
+  @include font(24px, 37px, 400);
   color: $color_dark;
   text-transform: uppercase;
+  position: relative;
+  padding-left: 72px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+    padding-left: 165px;
+  }
 }
 
 .option__title::before {
   content: "";
   border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 2px;
   width: 50px;
-  height: 51px;
+  height: 50px;
   background-color: $color_green;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: -21px;
+    left: 106%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: -30px;
+  }
 }
 
-.option__title--slim::before {
+.option__title--slim::after {
   content: "";
-  background-image: url("../../img/icon-cat-slim.svg");
+  background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
   width: 35px;
-  height: 49px;
+  height: 50px;
   display: block;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    left: 115%;
+    top: -30px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    left: 15px;
+    top: -36px;
+  }
 }
 
-.option__title--pro::before {
+.option__title--pro::after {
   content: "";
-  background-image: url("../../img/icon-cat-pro.svg");
+  background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 35px;
-  height: 45px;
+  width: 67px;
+  height: 28px;
   display: block;
+  position: absolute;
+  left: -10px;
+  top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    left: 96%;
+    top: 20px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    left: -18px;
+    top: -8px;
+  }
 }
 
 .option__description {
   @include font(14px,
   18px,
   400);
+  font-family: "Arial", sans-serif;
   color: $color_dark-gray;
+  padding-bottom: 22px;
+  padding-top: 10px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 24px, 400);
+    border: none;
+    margin-bottom: 15px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+    padding-bottom: 0;
+  }
 }
 
 .option__link {
+  position: relative;
   color: $color_dark;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px 15px 0 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+    font-size: 20px;
+  }
 }
 
 .option__link::after {
   content: "";
+  position: absolute;
+  width: 35px;
+  height: 11px;
+  left: 100%;
+  bottom: 4px;
+  background: url("../img/icon-right-arrow-long.svg") -9px 0 no-repeat;
+  background-size: 100% 100%;
+  transition: background-position 0.5s;
 }
 
-@media (min-width: $desktop-width) {
-  .option-list {
-    display: flex;
-    justify-content: space-between;
-    background-color: $color_light;
-  }
+.option__link:hover::after,
+.option__link:focus::after {
+  background-position: -1px 0;
+}
+
+.option__link:active::after {
+  opacity: 0.3;
 }
