@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css"> </head>
 
@@ -22,24 +23,25 @@
     </div>
   </header>
   <main>
-    <section class="programm-choice">
+    <section class="program-choice">
       <div class="page-layout">
-        <h1 class="page-title">Подбор программы</h1>
-        <p class="programm-choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <h1 class="page-title program-choice__title">Подбор программы</h1>
+        <p class="program-choice__text">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__row">
-            <fieldset class="form__fieldset form__fieldset--cat">
+            <div class="form__fieldset form__fieldset--cat">
               <div class="form__field">
                 <label for="cat-name" class="form__label">Имя:<sup>*</sup></label>
                 <input type="text" id="cat-name" value="Барсик" required class="form__input"> </div>
               <div class="form__field">
-                <label for="cat-weight" class="form__label">вес(кг):<sup>*</sup></label>
+                <label for="cat-weight" class="form__label">вес (кг):<sup>*</sup></label>
                 <input type="text" id="cat-weight" value="7" required class="form__input"> </div>
               <div class="form__field">
                 <label for="cat-age" class="form__label">возраст (лет):</label>
                 <input type="text" id="cat-age" value="7" class="form__input"> </div>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--radio">
+            </div>
+            
+            <div class="form__fieldset form__fieldset--radio">
               <div class="radio">
                 <label for="slim" class="radio__text">Похудение
                   <input type="radio" id="slim" name="choice" checked class="radio__input visually-hidden"> <span class="radio__custom"></span></label>
@@ -52,33 +54,35 @@
                 <label for="help" class="radio__text">Не знаю (нужен ваш совет)
                   <input type="radio" id="help" name="choice" class="radio__input visually-hidden"> <span class="radio__custom"></span></label>
               </div>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="form__fieldset">
-            <div class="page-subtitle"><span>Контактные данные (владельца кота)</span></div>
-            <div class="form__field">
+          <div class="form__fieldset">
+            <div class="page-subtitle form__legend">Контактные данные (владельца кота)</div>
+            <div class="form__row">
+            <div class="form__field form__field--decor">
               <label for="e-mail" class="form__label">E-mail:<sup>*</sup></label>
               <input type="email" id="e-mail" value="kuklachev@gmail.com" required class="form__input form__input--decor">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="13" class="form__decor" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
                 <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" /> </svg>
             </div>
-            <div class="form__field">
+            <div class="form__field form__field--decor">
               <label for="phone" class="form__label">Телефон:<sup>*</sup></label>
               <input type="tel" id="phone" value="8(960)900-60-90" required class="form__input form__input--decor">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="13" class="form__decor" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" class="form__decor" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
                 <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
                 <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
             c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
             C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
             C7.8,20,8.1,19.7,8.1,19.4z" /> </svg>
             </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <div class="page-subtitle"><span>Комментарий</span></div>
-            <textarea class="form__textarea" rows="8" cols="20">Расскажите обо всех повадках кота</textarea>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <div class="page-subtitle"><span>Дополнительно</span></div>
+          </div>
+          </div>
+          <div class="form__fieldset">
+            <div class="page-subtitle form__legend form__legend--comment">Комментарий</div>
+            <textarea class="form__textarea">Расскажите обо всех повадках кота</textarea>
+          </div>
+          <div class="form__fieldset">
+            <div class="page-subtitle form__legend form__legend--add">Дополнительно</div>
             <div class="form__row form__row--add">
               <div class="checkbox">
                 <label for="sweetener" class="checkbox__text">
@@ -97,12 +101,15 @@
                   <input type="checkbox" id="vitamins" class="checkbox__input visually-hidden"> <span class="checkbox__indicator"></span> Витамины </label>
               </div>
             </div>
-          </fieldset>
-          <input type="submit" value="Отправить заявку" class="button form__button button--green"> </form>
-        <p class="required"><sup>*</sup>- Обязательные поля</p>
+          </div>
+          </form>
+          <div class="program-choice__row">
+          <button type="submit" class="button program-choice__button button--green">Отправить заявку</button>
+        <p class="program-choice__required"><sup>*</sup>- Обязательные поля</p>
+        </div>
       </div>
     </section>
-    <div class="cooperation">
+    <div class="cooperation cooperation--gray">
       <div class="page-layout">
         <article class="cooperation__item"> <span class="cooperation__title">Приглашаем к сотрудничеству<br> дилеров!</span> <span class="cooperation__address">
             ул.Большая Конюшенная, д.19/8<br> Санкт-Петербург

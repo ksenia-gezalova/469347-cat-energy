@@ -6,7 +6,11 @@
     margin: 0;
     padding-top: 20px;
     padding-bottom: 0;
-    background: none;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #ebebeb 50%, #ebebeb 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 18%, #f2f2f2 18%, #f2f2f2 28%, #ebebeb 100%);
   }
 }
 

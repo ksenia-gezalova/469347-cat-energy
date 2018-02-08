@@ -1,12 +1,20 @@
 .checkbox {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  
+  @media(min-width: $tablet-width) {
+    width: calc(50% - 110px);
+    margin-bottom: 35px;
+  }
+  
+  @media(min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .checkbox__text {
   position: relative;
   cursor: pointer;
-  padding-left: 40px;
-  padding-top: 3px;
+  padding-left: 45px;
 }
 
 .checkbox__text input[type="checkbox"] + .checkbox__indicator {

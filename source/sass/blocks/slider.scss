@@ -3,14 +3,13 @@
     padding-bottom: 48px;
     background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #ebebeb 50%, #ebebeb 100%);
     background-position: center bottom;
-    background-size: 100% calc(100% - 190px);
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     flex-shrink: 0;
     padding-bottom: 50px;
-    background-size: 100% calc(100% - 208px);
+    background-position: center 167px;
   }
 }
 
