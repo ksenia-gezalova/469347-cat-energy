@@ -99,6 +99,10 @@
 
 .main-nav__link {
   color: $color_dark;
+
+  @media (min-width: $desktop-width) {
+    @include font(20px, 25px, 400);
+  }
 }
 
 .main-nav__link--active {
@@ -151,7 +155,6 @@
   .main-nav__item:last-child {
     padding-right: 0;
     margin-right: 0;
-
   }
 
   .main-nav__link {
@@ -172,11 +175,5 @@
 
   .main-nav__item {
     padding: 22px 17px;
-  }
-}
-
-.main-nav__link {
-  @media (min-width: $desktop-width) {
-    @include font(20px, 25px, 400);
   }
 }

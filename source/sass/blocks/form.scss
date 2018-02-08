@@ -130,26 +130,17 @@
   }
 
   &:focus {
-    padding: 12.5px;
+    padding: 13px 17px;
     border: 2px solid $color_light-gray;
   }
 
   &:invalid {
-    padding: 12.5px;
+    padding: 13px 17px;
     border: 2px solid #ff8282;
   }
 
   &::placeholder {
     color: $color_dark-gray;
-  }
-
-
-  &:focus {
-    padding: 13px 17px;
-  }
-
-  &:invalid {
-    padding: 13px 17px;
   }
 }
 
