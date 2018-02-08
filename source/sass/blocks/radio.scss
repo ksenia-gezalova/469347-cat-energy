@@ -1,6 +1,6 @@
 .radio {
   margin-bottom: 25px;
-  
+
   @media(min-width: $desktop-width) {
     margin-bottom: 30px;
   }
@@ -10,8 +10,8 @@
   position: relative;
   cursor: pointer;
   padding-left: 45px;
-  
-  @media(min-width: $desktop-width){
+
+  @media(min-width: $desktop-width) {
     padding-left: 55px;
   }
 }
@@ -24,7 +24,7 @@
   height: 30px;
   border: 1px solid #cfcfcf;
   border-radius: 50%;
-  
+
   @media(min-width: $desktop-width) {
     width: 40px;
     height: 40px;
@@ -46,7 +46,7 @@
   right: 50%;
   bottom: 50%;
   transform: translateX(50%) translateY(50%);
-  
+
   @media(min-width: $desktop-width) {
     width: 18px;
     height: 18px;

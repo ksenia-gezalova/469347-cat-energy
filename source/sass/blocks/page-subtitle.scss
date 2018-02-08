@@ -15,11 +15,11 @@
     border: solid $color_light;
     border-width: 0 10px;
   }
-  
+
   &::before {
     margin-left: -100%;
   }
-  
+
   &::after {
     margin-right: -100%;
   }
