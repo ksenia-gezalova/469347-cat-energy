@@ -1,13 +1,18 @@
 .main-nav {
   position: relative;
-  width: 320px;
   min-height: 51px;
   background-color: $color_light;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
     z-index: 1;
   }
+}
+
+.main-nav__list {
+  @include list-reset;
 }
 
 .main-nav__toggle {
@@ -28,8 +33,8 @@
   content: "";
   position: absolute;
   top: 15px;
-  left: 0;
-  width: 34px;
+  right: 20px;
+  width: 24px;
   height: 2px;
   background-color: #000000;
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
@@ -51,9 +56,9 @@
 
     position: absolute;
     top: 30px;
-    left: 18px;
+    right: 0;
 
-    width: 36px;
+    width: 34px;
     height: 2px;
 
     background-color: #000000;
@@ -82,23 +87,22 @@
   display: none;
 }
 
-.main-nav__list {
-  @include list-reset;
-}
-
 .main-nav__item {
-  @include font(20px, 20px, bold);
+  @include font(20px, 20px, 400);
   text-align: center;
   text-transform: uppercase;
   display: block;
-  margin-right: 32px;
   border-bottom: 1px solid $color_light-gray-border;
   color: $color_dark;
-  padding: 23px 0;
+  padding: 20px;
 }
 
 .main-nav__link {
   color: $color_dark;
+
+  @media (min-width: $desktop-width) {
+    @include font(20px, 25px, 400);
+  }
 }
 
 .main-nav__link--active {
@@ -106,7 +110,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__link--active .main-nav__link--active {
+  .main-nav__link--white {
     border-bottom: 4px solid $color_light;
   }
 }
@@ -134,6 +138,8 @@
     width: auto;
     margin: 0;
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .main-nav__toggle {
@@ -143,12 +149,16 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-left: auto;
+    justify-content: space-between;
+  }
+
+  .main-nav__item:last-child {
+    padding-right: 0;
+    margin-right: 0;
   }
 
   .main-nav__link {
-    @include font(18px, 24px, bold);
+    @include font(18px, 24px, 400);
     color: $color_dark;
   }
 
@@ -159,13 +169,11 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__link--index {
-    @include font(20px, 25px, bold);
+    @include font(20px, 25px, 400);
     color: $color_light;
   }
 
-  .main-nav__link {
-    @media (min-width: $desktop-width) {
-      @include font(20px, 25px, bold);
-    }
+  .main-nav__item {
+    padding: 22px 17px;
   }
 }

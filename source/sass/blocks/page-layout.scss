@@ -3,18 +3,21 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-layout {
     max-width: 768px;
     margin: 0 auto;
+    padding: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-layout {
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
+    padding: 0 40px;
   }
 }

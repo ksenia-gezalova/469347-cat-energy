@@ -21,15 +21,13 @@
   height: 38px;
   position: absolute;
   top: 11px;
-  left: 5px;
+  left: 20px;
 }
 
 .header__icon {
   display: block;
-  width: 101px;
   height: 18px;
   margin: 0 auto;
-  margin-left: 80px;
 
   @media (min-width: $tablet-width) {
     margin-left: 70px;
