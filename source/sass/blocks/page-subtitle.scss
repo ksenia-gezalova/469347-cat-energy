@@ -1,4 +1,4 @@
-.page-subtitle {
+/*.page-subtitle {
   @include font(24px, 24px, 400);
   color: $color_dark;
   text-transform: none;
@@ -22,5 +22,65 @@
 
   &::after {
     margin-right: -100%;
+  }
+}
+*/
+
+.page-subtitle {
+  @include font(24px, 24px, 400);
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin-right: -$s-field;
+  color: $color_dark;
+
+  &::before,
+  &::after {
+    min-width: $m-field;
+    margin-top: 15px;
+    height: 3px;
+    background-color: $color_green;
+  }
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: -$m-field;
+    margin-left: -$m-field;
+    font-size: 36px;
+
+    &::before,
+    &::after {
+      margin-top: 20px;
+    }
+
+    &::before {
+      content: "";
+      width: $m-field;
+      margin-right: $l-field;
+    }
+
+    &::after {
+      margin-left: $m-field;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 100vw;
+    margin-left: calc((50vw - 50%) * -1);
+    margin-right: calc((50vw - 50%) * -1);
+
+    &::before,
+    &::after {
+      min-width: calc((100vw - #{$desktop-width}) / 2);
+    }
+
+    &::after {
+      margin-left: $l-field;
+    }
   }
 }

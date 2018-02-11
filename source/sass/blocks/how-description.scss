@@ -59,24 +59,40 @@
   background-image: url("../img/advantage-leaf@1x.png");
   background-position: center;
   background-repeat: no-repeat;
+  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
 }
 
 .how-description__item--powder::before {
   background-image: url("../img/advantage-powder@1x.png");
   background-position: center;
   background-repeat: no-repeat;
+  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
 }
 
 .how-description__item--dining::before {
   background-image: url("../img/advantage-dining@1x.png");
   background-position: center;
   background-repeat: no-repeat;
+  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
 }
 
 .how-description__item--clock::before {
   background-image: url("../img/advantage-clock@1x.png");
   background-position: center;
   background-repeat: no-repeat;
+  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
 }
 
 .how-description__item--leaf,

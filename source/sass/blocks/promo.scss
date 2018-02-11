@@ -8,11 +8,11 @@
     color: $color_dark;
     text-align: left;
     padding-left: 60px;
-    min-height: 860px;
+    min-height: 840px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 750px;
+    min-height: 620px;
   }
 }
 
@@ -27,34 +27,50 @@
   width: 100%;
   left: -20px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    content: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
-    content: url("../img/index-background-desktop.jpg");
-    display: block;
-    left: 540px;
-    top: -71px;
+    content: url("../img/index-background-desktop@1x.jpg");
+    left: 650px;
+    top: -100px;
     z-index: 0;
+    width: 470px;
+    display: block;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
 .promo__title {
   @include font(36px,
   36px,
-  500);
+  400);
   padding-top: 39px;
 
   @media (min-width: $tablet-width) {
     @include font(60px, 60px, 500);
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 40px;
+    padding-left: 0;
+    max-width: 570px;
   }
 }
 
 .promo__text {
   @include font(14px,
   14px,
-  500);
+  400);
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -65,34 +81,36 @@
 .promo__button {
   @include font(14px,
   18px,
-  900);
+  400);
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 72px;
   padding-left: 72px;
-  max-width: 245px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px, 500);
+    max-width: 248px;
+  }
 }
 
 .promo__image {
-  margin-top: 15px;
-  margin-bottom: 15px;
   width: 280px;
-  height: 270px;
+  height: 271px;
 
   @media (min-width: $tablet-width) {
-    width: 680px;
-    height: 696px;
+    width: 709px;
+    height: 609px;
     position: absolute;
     z-index: -1;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
     z-index: 1;
-    top: 10%;
-    left: 55%;
+    top: 0;
+    right: 258px;
+    left: auto;
   }
 }

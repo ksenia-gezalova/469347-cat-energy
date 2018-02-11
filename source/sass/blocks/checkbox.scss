@@ -2,12 +2,13 @@
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    width: calc(50% - 110px);
-    margin-bottom: 35px;
+    width: calc(50% - 28px);
+    margin-bottom: 31px;
+    height: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: calc(25% - 59px);
   }
 }
 
@@ -15,6 +16,10 @@
   position: relative;
   cursor: pointer;
   padding-left: 45px;
+  
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
 }
 
 .checkbox__text input[type="checkbox"] + .checkbox__indicator {
@@ -24,6 +29,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cfcfcf;
+  
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .checkbox__text input[type="checkbox"]:checked + .checkbox__indicator::before,
@@ -39,6 +49,11 @@
   height: 2px;
   top: 15px;
   left: 2px;
+  
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    left: 6px;
+  }
 }
 
 .checkbox__text input[type="checkbox"] + .checkbox__indicator::after {
@@ -47,4 +62,9 @@
   height: 2px;
   top: 12px;
   left: 8px;
+  
+  @media (min-width: $tablet-width) {
+    top: 19px;
+    left: 12px;
+  }
 }
