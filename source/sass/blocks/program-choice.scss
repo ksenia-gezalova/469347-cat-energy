@@ -5,7 +5,7 @@
 .program-choice__title {
   margin-top: 15px;
   margin-bottom: 25px;
-  
+
   @media (min-width: $tablet-width) {
     margin-top: 53px;
   }
@@ -18,7 +18,7 @@
 .program-choice__text {
   @include font(14px, 18px, 400);
   text-transform: uppercase;
-  
+
   @media (min-width: $tablet-width) {
     @include font(20px, 30px, 400);
     margin-left: 40px;
@@ -64,7 +64,7 @@
     margin-top: 10px;
     margin-right: 145px;
   }
-  
+
   @media (min-width: $desktop-width) {
     margin-right: 392px;
     margin-top: 0;

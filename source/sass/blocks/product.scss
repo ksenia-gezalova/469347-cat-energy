@@ -1,10 +1,8 @@
-.product {
+/*product {
   @media (min-width: $tablet-width) {
     margin-top: 153px;
   }
-}
-
-/*.product__list {
+  .product__list {
   @include list-reset;
 }
 
@@ -397,7 +395,7 @@
     margin-left: 5px;
     margin-right: 0;
   }
-  
+
   .product__wrapper {
     display: flex;
     justify-content: flex-start;
@@ -431,12 +429,13 @@
     margin: 0;
     margin-bottom: 158px;
     padding-bottom: 0;
-    
+
     &:nth-child(4n) {
       margin-right: 0;
     }
   }
-.product__description {
+
+  .product__description {
     width: auto;
   }
 }

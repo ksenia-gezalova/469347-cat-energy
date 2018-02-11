@@ -1,6 +1,6 @@
 .radio {
   margin-bottom: 25px;
-  
+
   @media (min-width: $tablet-width) {
     height: 35px;
     margin-bottom: 18px;
@@ -17,7 +17,7 @@
   position: relative;
   cursor: pointer;
   padding-left: 45px;
-  
+
   @media (min-width: $tablet-width) {
     padding-left: 60px;
   }
@@ -35,7 +35,7 @@
   height: 30px;
   border: 1px solid #cfcfcf;
   border-radius: 50%;
-  
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;

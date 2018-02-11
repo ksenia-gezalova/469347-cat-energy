@@ -22,14 +22,14 @@
   position: absolute;
   top: 11px;
   left: 20px;
-  
+
   @media (min-width: $tablet-width) {
     positin: static;
     width: 173px;
     height: 58px;
     margin-left: -18px;
   }
-  
+
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 58px;
