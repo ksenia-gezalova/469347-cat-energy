@@ -9,10 +9,17 @@
   <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
-  <header>
+<header>
     <div class="page-layout">
       <nav class="main-nav main-nav--opened main-nav--nojs">
-        <a href="index.html" class="header"> <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Logo" class="header__logo"> <img src="img/logo-mobile-header.svg" alt="Cat Energy" class="header__icon" width="101" height="18"> </a>
+        <a href="index.html" class="header">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Logo" class="header__logo">
+          </picture>
+          <img src="img/logo-mobile-header.svg" alt="Cat Energy" class="header__icon" width="101" height="18">
+          </a>
         <button class="main-nav__toggle main-nav__toggle--active" type="button"> <span class="visually-hidden">Открыть меню</span> </button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
@@ -57,7 +64,7 @@
             </div>
           </div>
           <div class="form__fieldset">
-            <div class="page-subtitle form__legend">Контактные данные (владельца кота)</div>
+            <div class="page-subtitle form__legend form__legend--contacts">Контактные данные (владельца кота)</div>
             <div class="form__row">
               <div class="form__field form__field--decor">
                 <label for="e-mail" class="form__label">E-mail:<sup>*</sup></label>
@@ -111,7 +118,7 @@
     </section>
     <div class="cooperation cooperation--gray">
       <div class="page-layout">
-        <article class="cooperation__item"> <span class="cooperation__title">Приглашаем к сотрудничеству<br> дилеров!</span> <span class="cooperation__address">
+        <article class="cooperation__item"> <span class="cooperation__title">Приглашаем<br> к сотрудничеству<br> дилеров!</span> <span class="cooperation__address">
             ул.Большая Конюшенная, д.19/8<br> Санкт-Петербург
           </span> </article>
       </div>
