@@ -10,13 +10,13 @@
       width: 100vw;
       height: 0;
       border-top: 1px solid #e6e6e6;
-      
+
       @media (min-width: $desktop-width) {
         display: none;
       }
     }
   }
-  
+
   @media (min-width: $desktop-width) {
     margin-top: 31px;
   }
@@ -147,7 +147,7 @@
       right: 78px;
       top: 0;
       font-family: "Oswald", sans-serif;
-      
+
       @media (min-width: $desktop-width) {
         right: -2px;
       }
@@ -157,7 +157,7 @@
 
 .how-description__item--leaf::after {
   right: 93px;
-  
+
   @media (min-width: $desktop-width) {
     right: 16px;
   }

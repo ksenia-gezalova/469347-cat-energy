@@ -47,7 +47,7 @@
     top: -72px;
     left: 6px;
   }
-  
+
   @media (min-width: $desktop-width) {
     top: -37px;
     left: -78px;
@@ -160,7 +160,7 @@
     &--before {
       left: 50%;
       transform: translateX(-44%);
-      
+
       @media (min-width: $desktop-width) {
         left: 51%;
         transform: translateX(-50%);
