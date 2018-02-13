@@ -2,6 +2,8 @@
   position: relative;
   min-height: 51px;
   background-color: $color_light;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: $desktop-width) {
     background-color: transparent;

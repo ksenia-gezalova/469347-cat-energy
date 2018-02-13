@@ -3,6 +3,7 @@
   color: $color_gray;
   margin-top: 20px;
   padding: 20px;
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -25,11 +26,12 @@
   text-transform: uppercase;
   position: relative;
   padding-left: 72px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
     font-size: 36px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,8 +124,8 @@
   400);
   font-family: "Arial", sans-serif;
   color: $color_dark-gray;
-  padding-bottom: 22px;
-  padding-top: 10px;
+  padding-bottom: 23px;
+  padding-top: 0;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -143,7 +145,7 @@
   color: $color_dark;
   display: inline-block;
   vertical-align: middle;
-  padding: 15px 15px 0 0;
+  padding: 0;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

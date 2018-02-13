@@ -2,7 +2,9 @@
   text-align: center;
   color: $color_light;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: $tablet-width) {
     color: $color_dark;
@@ -58,7 +60,7 @@
   @include font(36px,
   36px,
   400);
-  padding-top: 39px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     @include font(60px, 60px, 500);
@@ -77,6 +79,7 @@
   14px,
   400);
   text-transform: uppercase;
+  padding-top: 13px;
 
   @media (min-width: $tablet-width) {
     @include font(20px, 20px, 500);
@@ -91,6 +94,8 @@
   padding-bottom: 12px;
   padding-right: 72px;
   padding-left: 72px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     @include font(20px, 20px, 500);
@@ -101,6 +106,7 @@
 .promo__image {
   width: 280px;
   height: 271px;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
     width: 709px;
