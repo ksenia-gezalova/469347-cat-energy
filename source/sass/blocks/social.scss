@@ -1,7 +1,7 @@
 .social {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   padding-top: 24px;
 
   @media (min-width: $tablet-width) {
@@ -22,9 +22,9 @@
   }
 }
 
-.social__item {
-  cursor: pointer;
+.social__button {
   padding: 0 20px;
+  display: block;
 }
 
 .social__button:hover svg {

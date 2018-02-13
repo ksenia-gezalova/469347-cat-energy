@@ -2,6 +2,8 @@
   position: relative;
   min-height: 51px;
   background-color: $color_light;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
@@ -106,6 +108,7 @@
 
 .main-nav__link--active {
   border-bottom: 4px solid $color_green;
+  padding-bottom: 5px;
 }
 
 @media (min-width: $desktop-width) {
