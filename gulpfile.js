@@ -25,7 +25,7 @@ gulp.task("html", function() {
     include()
   ]))
   .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest("build/"));
+  .pipe(gulp.dest("build/"))
   .pipe(server.stream());
 });
 
