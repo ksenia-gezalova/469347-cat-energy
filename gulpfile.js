@@ -17,6 +17,7 @@ var uglyfly = require("gulp-uglyfly");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var del = require("del");
+var run = require("run-sequence");
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
@@ -66,7 +67,7 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
     server: "build/",
     notify: false,

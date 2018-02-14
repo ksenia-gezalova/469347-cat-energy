@@ -34,3 +34,20 @@
 .social__button:active svg {
   fill: #c8e0ba;
 }
+
+@media (min-width: $tablet-width) {
+  .social__vk-icon {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__insta-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__fb-icon {
+    width: 14px;
+    height: 28px;
+  }
+}

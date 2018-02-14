@@ -60,12 +60,14 @@
 
     &::before {
       content: "";
-      width: $m-field;
-      margin-right: $l-field;
+      width: 38px;
+      margin-right: 39px;
+      margin-left: -45px;
     }
 
     &::after {
-      margin-left: $m-field;
+      margin-left: 30px;
+      margin-right: -45px;
     }
   }
 

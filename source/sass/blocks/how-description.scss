@@ -162,3 +162,9 @@
     right: 16px;
   }
 }
+
+.how-description__item--clock br {
+  @media (only: $mobile-width) {
+    display: none;
+  }
+}

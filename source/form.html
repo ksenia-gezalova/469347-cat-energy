@@ -8,10 +8,10 @@
   <title>Cat Energy</title>
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="stylesheet" href="css/style.css"> </head>
+  <link rel="stylesheet" href="css/style.min.css"> </head>
 
 <body>
-<header>
+  <header>
     <div class="page-layout">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <a href="index.html" class="header">
@@ -21,7 +21,7 @@
             <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Logo" class="header__logo">
           </picture>
           <img src="img/logo-mobile-header.svg" alt="Cat Energy" class="header__icon" width="101" height="18">
-          </a>
+        </a>
         <button class="main-nav__toggle main-nav__toggle--active" type="button"> <span class="visually-hidden">Открыть меню</span> </button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
@@ -76,7 +76,7 @@
               </div>
               <div class="form__field form__field--decor">
                 <label for="phone" class="form__label">Телефон:<sup>*</sup></label>
-                <input type="tel" id="phone" value="8(960)900-60-90" required class="form__input form__input--decor">
+                <input type="tel" id="phone" value="8 (960) 900-60-90" required class="form__input form__input--decor">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" class="form__decor" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
                 <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
                 <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
@@ -133,7 +133,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__button"> <span class="visually-hidden">VKontakte</span>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+              <svg class="social__vk-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
                 <g>
                   <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
     c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
@@ -155,7 +155,7 @@
           </li>
           <li class="social__item">
             <a class="social__button"> <span class="visually-hidden">Instagram</span>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+              <svg class="social__insta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
                 <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
   L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z" />
                 <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
@@ -165,7 +165,7 @@
           </li>
           <li class="social__item">
             <a class="social__button"> <span class="visually-hidden">Facebook</span>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="19" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+              <svg class="social__fb-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="19" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
                 <g>
                   <path d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
       M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
