@@ -60,23 +60,25 @@
 
     &::before {
       content: "";
-      width: $m-field;
-      margin-right: $l-field;
+      width: 38px;
+      margin-right: 39px;
+      margin-left: -45px;
     }
 
     &::after {
-      margin-left: $m-field;
+      margin-left: 30px;
+      margin-right: -45px;
     }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 100vw;
-    margin-left: calc((50vw - 50%) * -1);
+    //margin-left: calc((50vw - 50%) * -1);
     margin-right: calc((50vw - 50%) * -1);
 
     &::before,
     &::after {
-      min-width: calc((100vw - #{$desktop-width}) / 2);
+      //min-width: calc((100vw - #{$desktop-width}) / 2);
     }
 
     &::after {

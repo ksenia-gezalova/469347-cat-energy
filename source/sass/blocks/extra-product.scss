@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 79px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+  }
 }
 
 .extra-product__list {
@@ -206,8 +210,8 @@
   }
 
   .extra-product__options {
-    width: 290px;
-    margin-right: 40px;
+    width: 44%;
+    margin-right: 38px;
 
     td {
       padding: 0;
@@ -215,7 +219,7 @@
   }
 
   .extra-product__field {
-    text-align: right;
+    text-align: left;
   }
 
   .extra-product__title {
@@ -233,7 +237,14 @@
     border-right: none;
     border-left: none;
     //margin: 0;
-    //padding-bottom: 12px;
+    padding-bottom: 24px;
+    padding-top: 7px;
+    padding-left: 2px;
+    padding-right: 0;
+
+    &:last-child {
+      padding-bottom: 5px;
+    }
   }
 
   .extra-product__description {

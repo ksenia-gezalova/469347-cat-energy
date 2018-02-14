@@ -1,43 +1,57 @@
 .slider {
   @media (min-width: $tablet-width) {
-    padding-bottom: 48px;
+    padding-bottom: 61px;
     background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #ebebeb 50%, #ebebeb 100%);
     background-position: center bottom;
     background-repeat: no-repeat;
+    background-size: 100% calc(100% - 100px);
   }
 
   @media (min-width: $desktop-width) {
     flex-shrink: 0;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     background-position: center 167px;
+    margin-right: -40px;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 47%, #ebebeb 40%, #ebebeb 100%);
   }
 }
 
 .slider__content {
   position: relative;
   width: $mobile-width;
-  min-height: 248px;
+  min-height: 254px;
   margin: 0 auto 25px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width - ($m-field * 2);
-    min-height: 517px;
+    width: 693px;
+    min-height: 446px;
     margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    margin-bottom: 40px;
+    width: 683px;
+    margin-bottom: 69px;
+    padding-right: 40px;
   }
 }
 
 .slider__image {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 6px;
+  left: -19px;
   width: 100%;
   height: auto;
   opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    top: -72px;
+    left: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -37px;
+    left: -78px;
+  }
 }
 
 .slider__control {
@@ -48,7 +62,8 @@
   margin-bottom: 15px;
 
   @media (min-width: $desktop-width) {
-    padding-left: 37px;
+    padding-left: 0;
+    padding-right: 40px;
   }
 }
 
@@ -114,7 +129,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: -14px;
+    top: -16px;
     width: 34px;
     height: 34px;
     padding: 11px;
@@ -143,7 +158,13 @@
     }
 
     &--before {
-      left: 0;
+      left: 50%;
+      transform: translateX(-44%);
+
+      @media (min-width: $desktop-width) {
+        left: 51%;
+        transform: translateX(-50%);
+      }
     }
 
     &--after {

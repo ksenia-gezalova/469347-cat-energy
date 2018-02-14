@@ -1,7 +1,7 @@
 .cooperation {
   position: relative;
   background-color: $color_light;
-  margin-top: 17px;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     margin-top: -7px;
@@ -98,7 +98,7 @@
   background-color: $color_light-gray;
 }
 
-.cooperation__static-map {
+/*.cooperation__static-map {
   display: block;
   width: 100%;
   height: 362px;
@@ -110,5 +110,39 @@
 
   @media (min-width: $desktop-width) {
     height: 100%;
+  }
+}
+*/
+
+.cooperation__map {
+  height: 360px;
+  background-image: url("../img/map-pin.png"),
+    url("../img/bg-map-mobile@1x.png");
+  background-position: 50% 55%, center;
+  background-repeat: no-repeat;
+  background-size: 60px, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    height: 395px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    height: 400px;
+    width: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }

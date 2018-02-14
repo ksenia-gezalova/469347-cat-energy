@@ -20,7 +20,7 @@
     height: 198px;
     margin-top: 90px;
     background-position: 91px 68px, center;
-    margin-bottom: 41px;
+    margin-bottom: 67px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/icon-gift.svg"),
@@ -32,6 +32,8 @@
     background-image: url("../img/icon-gift.svg"),
       url("../img/gift-photo-desktop@1x.jpg");
     height: 289px;
+    margin-top: 68px;
+    margin-bottom: -22px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/icon-gift.svg"),
@@ -57,6 +59,12 @@
     left: 320px;
     bottom: 70px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    bottom: 47px;
+    text-align: center;
   }
 }
 
