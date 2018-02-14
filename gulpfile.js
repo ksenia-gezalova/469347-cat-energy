@@ -26,6 +26,7 @@ gulp.task("html", function() {
   ]))
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build/"));
+  .pipe(server.stream());
 });
 
 gulp.task("sprite", function() {
@@ -77,7 +78,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
 gulp.task("copy", function() {
@@ -98,13 +99,12 @@ gulp.task("clean", function () {
 gulp.task("build", function (done) {
   run(
       "clean",
+      "copy",
       "style",
       "images",
       "webp",
       "sprite",
       "html",
-      "script",
-      "fonts",
       done
   );
 });

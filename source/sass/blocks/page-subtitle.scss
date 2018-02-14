@@ -73,12 +73,12 @@
 
   @media (min-width: $desktop-width) {
     min-width: 100vw;
-    margin-left: calc((50vw - 50%) * -1);
+    //margin-left: calc((50vw - 50%) * -1);
     margin-right: calc((50vw - 50%) * -1);
 
     &::before,
     &::after {
-      min-width: calc((100vw - #{$desktop-width}) / 2);
+      //min-width: calc((100vw - #{$desktop-width}) / 2);
     }
 
     &::after {

@@ -164,7 +164,11 @@
 }
 
 .how-description__item--clock br {
-  @media (only: $mobile-width) {
+  @media (min-width: $mobile-width) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
