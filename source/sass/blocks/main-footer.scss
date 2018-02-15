@@ -1,5 +1,5 @@
 .main-footer {
-  padding-top: 33px;
+  padding-top: 37px;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -43,6 +43,10 @@
   @include font(16px, 16px, 400);
   color: $color_dark-gray;
   font-family: "Arial", sans-serif;
+  
+  @media (min-width: $desktop-width) {
+    margin-left: -9px;
+  }
 }
 
 .main-footer__copyright-link:hover {

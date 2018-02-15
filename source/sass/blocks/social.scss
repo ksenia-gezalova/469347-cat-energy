@@ -20,11 +20,19 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+  
+  @media (min-width: $desktop-width) {
+    width: 140px;
+  }
 }
 
 .social__button {
   padding: 0 20px;
   display: block;
+  
+  @media (min-width: $desktop-width) {
+    padding: 0 14px;
+  }
 }
 
 .social__button:hover svg {

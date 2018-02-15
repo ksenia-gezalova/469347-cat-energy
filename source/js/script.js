@@ -16,12 +16,12 @@ navToggle.addEventListener('click', function () {
 
 function initMap()  {
   var mapOption = {
-    zoom: 15,
-    center: new google.maps.LatLng(59.95, 30.3)
+    zoom: 17,
+    center: new google.maps.LatLng(59.9391246,30.3200654)
   }
   var map = new google.maps.Map(document.getElementById('map'), mapOption);
   var image = "../img/map-pin.png";
-  var myLatLng = new google.mapsLatLng(59.95, 30.3);
+  var myLatLng = new google.maps.LatLng(59.9388935,30.3227905);
   var pinMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,

@@ -7,13 +7,14 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-top: 20px;
-    padding-bottom: 0;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #ebebeb 60%, #ebebeb 100%);
+    padding-bottom: 15px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 56.5%, #ebebeb 56.5%, #ebebeb 100%);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 27%, #f2f2f2 27%, #f2f2f2 28%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 30%, #f2f2f2 100%);
     padding-top: 55px;
+    padding-bottom: 0;
   }
 }
 
@@ -28,7 +29,7 @@
     @include font(16px, 25px, 400);
     margin-top: 51px;
     padding-right: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,8 +60,8 @@
 
 .example__slider {
   @media (min-width: $tablet-width) {
-    margin-right: -$m-field;
-    margin-left: -$m-field;
+    //margin-right: -$m-field;
+    //margin-left: -$m-field;
   }
 
   @media (min-width: $desktop-width) {

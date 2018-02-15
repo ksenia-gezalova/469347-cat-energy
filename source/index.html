@@ -12,10 +12,6 @@
 
 <body>
 
-  <div style="display: none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-
   <header>
     <div class="page-layout">
       <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -94,18 +90,18 @@
             <input class="visually-hidden slider__input--after" id="slider-input-after" type="radio" name="slider-input">
             <p class="slider__content">
               <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/slider/before-desktop@1x.webp 1x, img/slider/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/before-tablet@1x.webp 1x, img/slider/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/slider/before-mobile@1x.webp 1x, img/slider/before-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Fat Cat">
               </picture>
 
               <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/slider/after-desktop@1x.webp 1x, img/slider/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/after-tablet@1x.webp 1x, img/slider/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/slider/after-mobile@1x.webp 1x, img/slider/after-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x 2x">
                 <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Slim Cat">
@@ -130,10 +126,20 @@
     <div class="cooperation">
       <div class="page-layout">
         <article class="cooperation__item"> <span class="cooperation__title">Приглашаем<br> к сотрудничеству<br> дилеров!</span> <span class="cooperation__address">
-            ул.Большая Конюшенная, д.19/8<br><br> Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8<br><br class="br"> Санкт-Петербург
           </span> </article>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124045!2d30.320894616185566!3d59.93879686904781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516710163654" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen class="cooperation__map"></iframe>
+      <div class="cooperation__map">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="cooperation__bg-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        </picture>
+        <span class="cooperation__js-map" id="map"></span>
+      </div>
     </div>
   </main>
   <footer class="main-footer main-footer--gray">
@@ -194,7 +200,24 @@
   </footer>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEQrH7SDvyH3sQCcd_Rhwk8o2N7Gni9Dc&callback=initMap" async defer></script>
   <script src="js/script.js"></script>
+  <script>
+    function initMap()  {
+  var mapOption = {
+    zoom: 17,
+    center: new google.maps.LatLng(59.9391246,30.3200654)
+  }
+  var map = new google.maps.Map(document.getElementById('map'), mapOption);
+  var image = "../img/map-pin.png";
+  var myLatLng = new google.maps.LatLng(59.9388935,30.3227905);
+  var pinMarker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: image,
+  })
+}
+google.maps.event.addDomListener(window, 'load', initMap);
 
+  </script>
 </body>
 
 </html>
