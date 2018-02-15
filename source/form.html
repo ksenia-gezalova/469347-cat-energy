@@ -121,10 +121,20 @@
     <div class="cooperation cooperation--gray">
       <div class="page-layout">
         <article class="cooperation__item"> <span class="cooperation__title">Приглашаем<br> к сотрудничеству<br> дилеров!</span> <span class="cooperation__address">
-            ул.Большая Конюшенная, д.19/8<br> Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8<br><br class="br"> Санкт-Петербург
           </span> </article>
       </div>
-      <div class="cooperation__map" id="map"></div>
+      <div class="cooperation__map">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="cooperation__bg-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        </picture>
+        <span class="cooperation__js-map" id="map"></span>
+      </div>
     </div>
   </main>
   <footer class="main-footer main-footer--gray">

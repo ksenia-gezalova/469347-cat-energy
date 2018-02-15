@@ -1,5 +1,10 @@
 .catalog {
   overflow: hidden;
+  margin-bottom: 14px;
+  
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog__inner {
@@ -7,15 +12,15 @@
 }
 
 .catalog__title {
-  padding-top: 12px;
-  padding-bottom: 30px;
+  padding-top: 19px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 28px;
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 48px;
+    margin-top: 37px;
     padding-bottom: 12px;
   }
 }

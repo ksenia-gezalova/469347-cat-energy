@@ -1,8 +1,8 @@
 .show-all {
   background-color: $color_light;
   text-align: center; //margin-top: 24px;
-  padding-bottom: 24px;
-  padding-top: 78px;
+  padding-bottom: 23px;
+  padding-top: 79px;
 
   &::after {
     content: "";
@@ -46,7 +46,7 @@
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      top: -113px;
+      top: -105px;
     }
   }
 
@@ -90,12 +90,14 @@
   20px,
   400);
   margin: 0 auto;
+  padding: 10px 25px;
 
   @media (min-width: $tablet-width) {
     margin-top: 85px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 87px;
+    margin-top: 92px;
+    margin-left: 9px;
   }
 }

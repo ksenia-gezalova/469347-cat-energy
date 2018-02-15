@@ -201,6 +201,10 @@
   }
 }
 
+.form__input--decor {
+  padding-left: 10px;
+}
+
 .form__input--decor:focus ~ .form__decor {
   fill: #bddfa8;
 }
