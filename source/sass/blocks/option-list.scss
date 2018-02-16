@@ -1,0 +1,7 @@
+.option-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color_light;
+  }
+}

@@ -59,7 +59,7 @@
 
 .cooperation__address {
   @include font(14px, 20px, 400);
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", "Verdana", sans-serif;
   color: $color_dark-gray;
 
   @media (min-width: $tablet-width) {

@@ -52,7 +52,7 @@
 
 .tip__text {
   @include font(10px, 12px, 400);
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", "Verdana", sans-serif;
   position: absolute;
   top: 85%;
   left: 15%;

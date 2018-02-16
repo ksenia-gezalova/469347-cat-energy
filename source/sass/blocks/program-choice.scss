@@ -1,6 +1,6 @@
 .program-choice {
   overflow: hidden;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 32px;
@@ -47,19 +47,22 @@
   @media (min-width: $tablet-width) {
     @include font(20px, 20px, 400);
     margin-top: 0;
-    margin-left: 40px;
-    padding: 16px 65px;
+    //margin-left: 40px;
+    //padding: 16px 65px;
+    padding: 0;
+    width: 282px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 16px 206px;
     margin-top: -10px;
     margin-left: 0;
+    width: auto;
   }
 }
 
 .program-choice__required {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", "Verdana", sans-serif;
   text-align: center;
   margin-top: 13px;
 
@@ -67,7 +70,7 @@
     @include font(16px, 16px, 400);
     text-align: right;
     margin-top: 10px;
-    margin-right: 145px;
+    margin-right: 109px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +83,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {

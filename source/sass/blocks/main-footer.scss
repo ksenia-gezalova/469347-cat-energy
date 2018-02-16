@@ -42,7 +42,7 @@
 .main-footer__copyright a {
   @include font(16px, 16px, 400);
   color: $color_dark-gray;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", "Verdana", sans-serif;
 
   @media (min-width: $desktop-width) {
     margin-left: -9px;
