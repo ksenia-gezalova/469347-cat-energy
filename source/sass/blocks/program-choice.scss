@@ -1,6 +1,10 @@
 .program-choice {
   overflow: hidden;
   margin-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .program-choice__title {
@@ -80,6 +84,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 59px;
   }
 }

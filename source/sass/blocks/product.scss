@@ -21,8 +21,8 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -20px;
-    width: 100vw;
+    left: -36vw;
+    width: 136vw;
     height: 0;
     border-top: 1px solid #e6e6e6;
   }
@@ -160,11 +160,11 @@
     position: absolute;
     left: 0; //transform: translateX(-50%);
     &--small {
-      top: -40px;
+      top: -47px;
     }
 
     &--big {
-      top: -80px;
+      top: -83px;
     }
   }
 
@@ -247,5 +247,15 @@
 
   .product__description {
     width: auto;
+  }
+
+  .product__img {
+    &--small {
+      top: -40px;
+    }
+
+    &--big {
+      top: -76px;
+    }
   }
 }
