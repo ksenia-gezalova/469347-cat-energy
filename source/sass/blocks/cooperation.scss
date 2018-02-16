@@ -13,14 +13,15 @@
   align-items: flex-start;
   padding-bottom: 27px;
   padding-top: 26px;
-  
+
   .br {
     display: none;
-    
+    margin-top: 17px;
+
     @media (min-width: $tablet-width) {
       display: block;
     }
-    
+
     @media (min-width: $desktop-width) {
       display: none;
     }
@@ -32,7 +33,7 @@
     padding-top: 65px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 64px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +41,7 @@
     //width: 570px;
     background-color: $color_light;
     z-index: 20;
+    padding-bottom: 64px;
   }
 }
 
@@ -152,7 +154,7 @@
 
   @media (min-width: $tablet-width) {
     height: 396px;
-    
+
     &::before {
       top: 50%;
       left: 50%;

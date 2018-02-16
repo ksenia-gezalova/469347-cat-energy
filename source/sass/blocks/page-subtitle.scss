@@ -36,10 +36,15 @@
 
   &::before,
   &::after {
-    min-width: $m-field;
+    //min-width: 96px;
+    min-width: 52px;
     margin-top: 15px;
     height: 3px;
     background-color: $color_green;
+
+    @media (min-width: $tablet-width) {
+      min-width: 30px;
+    }
   }
 
   &::after {
@@ -62,7 +67,7 @@
       content: "";
       width: 38px;
       margin-right: 39px;
-      margin-left: -45px;
+      margin-left: -49px;
     }
 
     &::after {
@@ -83,6 +88,11 @@
 
     &::after {
       margin-left: $l-field;
+    }
+
+    &::before {
+      margin-left: -77px;
+      width: 70px;
     }
   }
 }

@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     @include font(20px, 20px, 400);
-    padding-bottom: 16px;
+    padding-bottom: 10px;
     margin-left: 41px;
     margin-right: 37px;
     margin-top: 67px;
@@ -16,6 +16,7 @@
     margin-right: 0;
     margin-bottom: 0;
     padding-bottom: 0;
+    padding-left: 2px;
   }
 }
 
@@ -69,6 +70,9 @@
     border: 1px solid #e7e7e7;
     width: 47%;
     margin: 0;
+    padding-left: 30px;
+    padding-top: 34px;
+    padding-bottom: 0;
   }
 }
 
@@ -203,6 +207,14 @@
 
 .form__input--decor {
   padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 22px;
+  }
 }
 
 .form__input--decor:focus ~ .form__decor {
@@ -218,7 +230,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 67px;
+    margin-top: 73px;
   }
 
   @media (min-width: $desktop-width) {

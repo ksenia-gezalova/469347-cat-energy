@@ -1,5 +1,6 @@
 .program-choice {
   overflow: hidden;
+  margin-bottom: 19px;
 }
 
 .program-choice__title {
@@ -7,7 +8,7 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 53px;
+    margin-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +23,7 @@
   @media (min-width: $tablet-width) {
     @include font(20px, 30px, 400);
     margin-left: 40px;
-    margin-top: 54px;
+    margin-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +57,7 @@
 .program-choice__required {
   font-family: "Arial", sans-serif;
   text-align: center;
-  margin-top: 19px;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
     @include font(16px, 16px, 400);
@@ -75,6 +76,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
   }
 }

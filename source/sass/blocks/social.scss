@@ -19,8 +19,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    width: 145px;
   }
-  
+
   @media (min-width: $desktop-width) {
     width: 140px;
   }
@@ -29,7 +30,12 @@
 .social__button {
   padding: 0 20px;
   display: block;
-  
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 14px;
   }

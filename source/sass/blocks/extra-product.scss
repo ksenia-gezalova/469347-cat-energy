@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 81px;
+    margin-top: 79px;
   }
 }
 
@@ -84,7 +84,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    font-weight: 20px;
   }
 }
 
@@ -243,17 +242,17 @@
     //margin: 0;
     padding-bottom: 30px;
     padding-top: 7px;
-    padding-left: 5px;
+    padding-left: 2px;
     padding-right: 0;
 
     &:last-child {
       padding-bottom: 11px;
     }
-    
+
     .extra-product__field {
       text-align: left;
     }
-    
+
     .extra-product__options {
       width: 44%;
     }
